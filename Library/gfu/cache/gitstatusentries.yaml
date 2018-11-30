@@ -1,0 +1,395 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 5
+  lastUpdatedAtString: 2018-12-01T00:32:11.674+09:00
+  initializedAtString: 2018-11-30T21:30:49.246+09:00
+  entries:
+  - path: Assets/Images/back-arrow.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/back-arrow.png
+    projectPath: Assets/Images/back-arrow.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/back-arrow.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/back-arrow.png.meta
+    projectPath: Assets/Images/back-arrow.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDalbum.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDalbum.png
+    projectPath: Assets/Images/CDalbum.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDalbum.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDalbum.png.meta
+    projectPath: Assets/Images/CDalbum.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDAlbum2.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDAlbum2.png
+    projectPath: Assets/Images/CDAlbum2.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDAlbum2.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDAlbum2.png.meta
+    projectPath: Assets/Images/CDAlbum2.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDAlbum3.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDAlbum3.png
+    projectPath: Assets/Images/CDAlbum3.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDAlbum3.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDAlbum3.png.meta
+    projectPath: Assets/Images/CDAlbum3.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDAlbum4.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDAlbum4.png
+    projectPath: Assets/Images/CDAlbum4.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDAlbum4.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDAlbum4.png.meta
+    projectPath: Assets/Images/CDAlbum4.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDAlbum5.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDAlbum5.png
+    projectPath: Assets/Images/CDAlbum5.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/CDAlbum5.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/CDAlbum5.png.meta
+    projectPath: Assets/Images/CDAlbum5.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/circular-shape-silhouette.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/circular-shape-silhouette.png
+    projectPath: Assets/Images/circular-shape-silhouette.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/circular-shape-silhouette.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/circular-shape-silhouette.png.meta
+    projectPath: Assets/Images/circular-shape-silhouette.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/closeMenuIcon.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/closeMenuIcon.png
+    projectPath: Assets/Images/closeMenuIcon.png
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets/Images/closeMenuIcon.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/closeMenuIcon.png.meta
+    projectPath: Assets/Images/closeMenuIcon.png.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets/Images/DJ.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/DJ.png
+    projectPath: Assets/Images/DJ.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/DJ.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/DJ.png.meta
+    projectPath: Assets/Images/DJ.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/equalizer.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/equalizer.png
+    projectPath: Assets/Images/equalizer.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/equalizer.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/equalizer.png.meta
+    projectPath: Assets/Images/equalizer.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/glass.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/glass.png
+    projectPath: Assets/Images/glass.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/glass.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/glass.png.meta
+    projectPath: Assets/Images/glass.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/menuBlack.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/menuBlack.png
+    projectPath: Assets/Images/menuBlack.png
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets/Images/menuBlack.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/menuBlack.png.meta
+    projectPath: Assets/Images/menuBlack.png.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets/Images/menuBlackCircle.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/menuBlackCircle.png
+    projectPath: Assets/Images/menuBlackCircle.png
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets/Images/menuBlackCircle.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/menuBlackCircle.png.meta
+    projectPath: Assets/Images/menuBlackCircle.png.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets/Images/musical-notation-of-music-class.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/musical-notation-of-music-class.png
+    projectPath: Assets/Images/musical-notation-of-music-class.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/musical-notation-of-music-class.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/musical-notation-of-music-class.png.meta
+    projectPath: Assets/Images/musical-notation-of-music-class.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/music-player.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/music-player.png
+    projectPath: Assets/Images/music-player.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/music-player.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/music-player.png.meta
+    projectPath: Assets/Images/music-player.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/painting.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/painting.png
+    projectPath: Assets/Images/painting.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/painting.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/painting.png.meta
+    projectPath: Assets/Images/painting.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/palette.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/palette.png
+    projectPath: Assets/Images/palette.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/palette.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/palette.png.meta
+    projectPath: Assets/Images/palette.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/play.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/play.png
+    projectPath: Assets/Images/play.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/play.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/play.png.meta
+    projectPath: Assets/Images/play.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/play-button-sing.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/play-button-sing.png
+    projectPath: Assets/Images/play-button-sing.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/play-button-sing.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/play-button-sing.png.meta
+    projectPath: Assets/Images/play-button-sing.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/puase.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/puase.png
+    projectPath: Assets/Images/puase.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/puase.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/puase.png.meta
+    projectPath: Assets/Images/puase.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/turntable.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/turntable.png
+    projectPath: Assets/Images/turntable.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/turntable.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/turntable.png.meta
+    projectPath: Assets/Images/turntable.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/volume.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/volume.png
+    projectPath: Assets/Images/volume.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/volume.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/volume.png.meta
+    projectPath: Assets/Images/volume.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/volume2.png
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/volume2.png
+    projectPath: Assets/Images/volume2.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Images/volume2.png.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Images/volume2.png.meta
+    projectPath: Assets/Images/volume2.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Scenes/Calculation.unity
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scenes/Calculation.unity
+    projectPath: Assets/Scenes/Calculation.unity
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets/Scenes/Calculation.unity.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scenes/Calculation.unity.meta
+    projectPath: Assets/Scenes/Calculation.unity.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets/Scenes/Main.unity
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scenes/Main.unity
+    projectPath: Assets/Scenes/Main.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/Scripts/CanvasController.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/CanvasController.cs
+    projectPath: Assets/Scripts/CanvasController.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/Scripts/CanvasController.cs.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/CanvasController.cs.meta
+    projectPath: Assets/Scripts/CanvasController.cs.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/Scripts/CollectionOfFunctions.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/CollectionOfFunctions.cs
+    projectPath: Assets/Scripts/CollectionOfFunctions.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/Scripts/Graph.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/Graph.cs
+    projectPath: Assets/Scripts/Graph.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/Scripts/GraphFunction.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/GraphFunction.cs
+    projectPath: Assets/Scripts/GraphFunction.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/Scripts/GraphFunctionName.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/GraphFunctionName.cs
+    projectPath: Assets/Scripts/GraphFunctionName.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/Scripts/RadialProgressBar.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/RadialProgressBar.cs
+    projectPath: Assets/Scripts/RadialProgressBar.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Scripts/RadialProgressBar.cs.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/RadialProgressBar.cs.meta
+    projectPath: Assets/Scripts/RadialProgressBar.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/Scripts/Resolution.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/Resolution.cs
+    projectPath: Assets/Scripts/Resolution.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/Scripts/Rotation.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/Scripts/Rotation.cs
+    projectPath: Assets/Scripts/Rotation.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets/TestScene/BallMovement.cs
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/TestScene/BallMovement.cs
+    projectPath: Assets/TestScene/BallMovement.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/TestScene/BallMovement.cs.meta
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/TestScene/BallMovement.cs.meta
+    projectPath: Assets/TestScene/BallMovement.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets/TestScene/testScene.unity
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/Assets/TestScene/testScene.unity
+    projectPath: Assets/TestScene/testScene.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings/TagManager.asset
+    fullPath: /Applications/Unity/Projects/MathematicalVisualization/ProjectSettings/TagManager.asset
+    projectPath: ProjectSettings/TagManager.asset
+    originalPath: 
+    status: 3
+    staged: 0
