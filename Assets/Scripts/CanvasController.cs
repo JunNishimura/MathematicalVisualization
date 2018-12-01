@@ -9,7 +9,7 @@ public class CanvasController : MonoBehaviour
     //----- Objects -----//
     [SerializeField] private GameObject MenuCanvas; // MenuCanvas UI which have MenuUI and FormulaUI
     [SerializeField] private GameObject MenuIcon; // MenuIcon
-    [SerializeField] private GameObject MenuCloseIcon; // MenuCloseIcon
+    [SerializeField] private GameObject StateIcon; // stateIcon. Icon describes the current state running in the scene
     [SerializeField] private GameObject MenuUI; // MenuUI
     [SerializeField] private GameObject FormulaUI; // FormulaUI
     [SerializeField] private GameObject formulaButton; // formula button
@@ -55,6 +55,9 @@ public class CanvasController : MonoBehaviour
         ClearScene();
         MenuIcon.SetActive(true);
 
+        //------ set the default stateIcon image -----//
+        SetStateIcon(Resources.Load<Sprite>("painting"));
+
         //----- under construction -----//
         // set up for formulaUI
         //formulaTextBoard = this.transform.Find("FormulaTextBoard").game・
@@ -62,13 +65,7 @@ public class CanvasController : MonoBehaviour
 
     private void Update()
     {
-        //// while menuCanvas is off, clear the scene
-        //if (!menuCanvas.activeSelf && !radialBar.activeSelf)
-        //{
-        //    ClearScene();
-        //}
-
-        //// show menuUIs on the screen 
+        // show MenuUI on the screen 
         if (MenuUI.activeSelf)
         {
             ArrangeCircularLayout(MenuUIs);
@@ -77,6 +74,15 @@ public class CanvasController : MonoBehaviour
         {
             ArrangeCircularLayout(FormulaUIs);
         }
+
+
+
+        //// while menuCanvas is off, clear the scene
+        //if (!menuCanvas.activeSelf && !radialBar.activeSelf)
+        //{
+        //    ClearScene();
+        //}
+
 
         //int dropdownVal = dropdown.value;
         //// if dropdown has changed, let's change the formulaUI
@@ -102,7 +108,7 @@ public class CanvasController : MonoBehaviour
         //    prevDropdownVal = dropdownVal;
         //}
 
-         //zoom up or zoom out depending on the value of slider
+        //zoom up or zoom out depending on the value of slider
         float newPosZ = Mathf.Lerp(-5.0f, -1.0f, zoomSlider.value);
         Camera.main.transform.position = new Vector3(0, 0.5f, newPosZ);
     }
@@ -136,6 +142,13 @@ public class CanvasController : MonoBehaviour
             this.transform.GetChild(i).gameObject.SetActive(false);
         }
     }
+
+    // this is the function to set the Icon on the StateIcon
+    private void SetStateIcon(Sprite stateImage)
+    {
+        StateIcon.transform.GetChild(0).GetComponent<Image>().sprite = stateImage;
+    }
+
     //------ other functions -----//
 
 
@@ -147,9 +160,10 @@ public class CanvasController : MonoBehaviour
         FormulaUI.SetActive(false);
         MenuCanvas.SetActive(true);
         MenuUI.SetActive(true);
-        MenuCloseIcon.SetActive(true);
+        StateIcon.SetActive(true);
         playButton.SetActive(true);
         returnButton.SetActive(true);
+        SetStateIcon(Resources.Load<Sprite>("painting"));
     }
 
     // formula button event
@@ -157,13 +171,14 @@ public class CanvasController : MonoBehaviour
     {
         MenuUI.SetActive(false);
         FormulaUI.SetActive(true);
+        SetStateIcon(Resources.Load<Sprite>("DJ"));
     }
 
     // resolution button event
     private void ResolutionButtonPressed()
     {
         MenuCanvas.SetActive(false);
-        MenuCloseIcon.SetActive(false);
+        StateIcon.SetActive(false);
         radialBar.SetActive(true);
         returnButton.SetActive(true);
     }
@@ -174,6 +189,7 @@ public class CanvasController : MonoBehaviour
         MenuCanvas.SetActive(false);
         zoomSliderObj.SetActive(true);
         returnButton.SetActive(true);
+        SetStateIcon(Resources.Load<Sprite>("glass"));
     }
 
     // play button event
