@@ -6,6 +6,9 @@ using TMPro;
 
 public class CanvasController : MonoBehaviour 
 {
+    //----- global variable -----//
+    public static bool IsUIactivated; // this is global varialbe to show the current state of UI. if UI is on, turn this true.
+
     //----- Objects -----//
     [SerializeField] private GameObject MenuCanvas; // MenuCanvas UI which have MenuUI and FormulaUI
     [SerializeField] private GameObject MenuIcon; // MenuIcon
@@ -38,6 +41,8 @@ public class CanvasController : MonoBehaviour
 
     private void Awake()
     {
+        //----- set up for global varialbe -----//
+        IsUIactivated = false;
 
         //----- set up for tagging objects -----//
         MenuUIs = GameObject.FindGameObjectsWithTag("MenuUIs");
@@ -65,6 +70,12 @@ public class CanvasController : MonoBehaviour
 
     private void Update()
     {
+        // turn IsUIactivated false if MenuIcon is true.
+        // Because when MenuIcon is appearing on the screen, UI itself is not appearing.
+        if (MenuIcon.activeSelf) IsUIactivated = false;
+        else IsUIactivated = true;
+
+
         // show MenuUI on the screen 
         if (MenuUI.activeSelf)
         {
@@ -162,7 +173,6 @@ public class CanvasController : MonoBehaviour
         MenuUI.SetActive(true);
         StateIcon.SetActive(true);
         playButton.SetActive(true);
-        returnButton.SetActive(true);
         SetStateIcon(Resources.Load<Sprite>("painting"));
     }
 
@@ -171,6 +181,7 @@ public class CanvasController : MonoBehaviour
     {
         MenuUI.SetActive(false);
         FormulaUI.SetActive(true);
+        returnButton.SetActive(true);
         SetStateIcon(Resources.Load<Sprite>("DJ"));
     }
 

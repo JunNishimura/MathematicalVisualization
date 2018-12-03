@@ -23,31 +23,37 @@ using UnityEngine.UI;
 public class Graph : MonoBehaviour 
 {
     public GameObject pointPrefab;
-    public Dropdown dropdown;
+    //public Dropdown dropdown;
+    private float time;
 
     // points of instances
     private List<GameObject> pointslist = new List<GameObject>();
-    // resolution
     private int resolution;
 
     private void Awake()
     {
         ClearLists();
-        SetList();
+        SetList(); // as default, the resolution is ten
     }
 
     private void FixedUpdate()
     {
-        float t = Time.time;
-        float step = 2.0f / resolution;
-        GraphFunction f = CollectionOfFunctions.functions[(int)dropdown.value];
-        for (int i = 0, z = 0; z < resolution; z++) 
+        // while the user is in UI mode, the graph animation stops running
+        if (!CanvasController.IsUIactivated)
         {
-            float v = (z + 0.5f) * step - 1.0f;
-            for (int x = 0; x < resolution; x++, i++)
+            time += Time.deltaTime;
+
+            float step = 2.0f / resolution;
+            //GraphFunction f = CollectionOfFunctions.functions[(int)dropdown.value];
+            GraphFunction f = CollectionOfFunctions.functions[0];
+            for (int i = 0, z = 0; z < resolution; z++)
             {
-                float u = (x + 0.5f) * step - 1.0f;
-                pointslist[i].transform.localPosition = f(u, v, t);
+                float v = (z + 0.5f) * step - 1.0f;
+                for (int x = 0; x < resolution; x++, i++)
+                {
+                    float u = (x + 0.5f) * step - 1.0f;
+                    pointslist[i].transform.localPosition = f(u, v, time);
+                }
             }
         }
     }
@@ -74,8 +80,7 @@ public class Graph : MonoBehaviour
     private void SetList() 
     {
         //----- resolution setup -----//
-        resolution = Resolution.currentSliderValue;
-        Debug.Log("Now the resolution is : " + resolution.ToString());
+        resolution = RadialProgressBar.GetCurrentLoadingResolution > 10 ? RadialProgressBar.GetCurrentLoadingResolution : 10;
 
         //----- points setup -----//
         // why 2? because we want to range -1 ~ 1, which means 2.

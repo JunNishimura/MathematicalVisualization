@@ -9,19 +9,29 @@ using UnityEngine.UI;
 public class RadialProgressBar : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private int maxResolution;
     public GameObject LoadingBarObj;
     public GameObject PauseButtonObj;
+    public GameObject ApplyObj;
     private Image loadingBar;
     private Image loadingStateImage;
     private Button pauseButton;
     private Sprite pauseSprite;
     private Sprite restartSprite;
-    private float currentAmount;
+    private static float currentAmount;
+    public static int GetCurrentLoadingResolution
+    {
+        get
+        {
+            return (int)currentAmount;
+        }
+    }
     private bool loadingState;
 
     private void Awake()
     {
         currentAmount = 0;
+        maxResolution = 100;
         loadingBar = LoadingBarObj.GetComponent<Image>();
         loadingStateImage = PauseButtonObj.GetComponent<Image>();
         pauseButton = PauseButtonObj.GetComponent<Button>();
@@ -35,11 +45,11 @@ public class RadialProgressBar : MonoBehaviour
     private void Update()
     {
         // if loadingState is true, then increase the currentAmount
-        if (currentAmount < 100 && loadingState)
+        if (currentAmount <= maxResolution && loadingState)
         {
             currentAmount += speed * Time.deltaTime;
         }
-        else if (currentAmount >= 100 && loadingState)
+        else if (currentAmount > maxResolution && loadingState)
         {
             currentAmount = 0;
         } 
@@ -47,8 +57,7 @@ public class RadialProgressBar : MonoBehaviour
         {
             currentAmount += 0;
         }
-
-        loadingBar.fillAmount = currentAmount / 100;
+        loadingBar.fillAmount = currentAmount / maxResolution;
     }
 
     private void PauseButtonFunc()
@@ -59,11 +68,13 @@ public class RadialProgressBar : MonoBehaviour
         {
             // if the loading bar stops increasing, then show the restart image
             loadingStateImage.sprite = restartSprite;
+            ApplyObj.SetActive(true);
         } 
         else
         {
             // if the loading bar is increasing, then show the pause image
             loadingStateImage.sprite = pauseSprite;
+            ApplyObj.SetActive(false);
         }
     }
 }

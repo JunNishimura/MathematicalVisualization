@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// 関係ない
+
 public class Rotation : MonoBehaviour 
 {
     // the velocity of target's rotation
@@ -13,12 +13,12 @@ public class Rotation : MonoBehaviour
     private Vector2 newAngle = Vector2.zero;
 
     // menuUI
-    public GameObject menuUI;
+    [SerializeField] private GameObject ZoomSlider;
 
     private void Update()
     {
         // can be rotated when menuUI isn't active
-        if (!menuUI.activeSelf)
+        if (!ZoomSlider.activeSelf)
         {
             if (Input.GetMouseButtonDown(0))
             {
