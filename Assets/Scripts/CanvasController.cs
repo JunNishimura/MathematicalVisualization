@@ -86,8 +86,6 @@ public class CanvasController : MonoBehaviour
             ArrangeCircularLayout(FormulaUIs);
         }
 
-
-
         //// while menuCanvas is off, clear the scene
         //if (!menuCanvas.activeSelf && !radialBar.activeSelf)
         //{
