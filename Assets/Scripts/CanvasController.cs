@@ -18,10 +18,13 @@ public class CanvasController : MonoBehaviour
     [SerializeField] private GameObject formulaButton; // formula button
     [SerializeField] private GameObject resolutionButton; // resolution button
     [SerializeField] private GameObject zoomButton; // zoom button
+    [SerializeField] private GameObject playlistsButton; // playlists button
+    [SerializeField] private GameObject creationButton; // creation button
     [SerializeField] private GameObject playButton; // play button
     [SerializeField] private GameObject returnButton; // return button
     [SerializeField] private GameObject radialBar; // radial progress bar
     [SerializeField] private GameObject zoomSliderObj; // zoom slider UI
+    [SerializeField] private GameObject playlistsObj;
     [SerializeField] private Slider zoomSlider; // zoom slider
 
     //----- tagged Objects -----//
@@ -53,6 +56,8 @@ public class CanvasController : MonoBehaviour
         formulaButton.GetComponent<Button>().onClick.AddListener(FormulaButtonPressed);
         resolutionButton.GetComponent<Button>().onClick.AddListener(ResolutionButtonPressed);
         zoomButton.GetComponent<Button>().onClick.AddListener(ZoomButtonPressed);
+        playlistsButton.GetComponent<Button>().onClick.AddListener(PlaylistsButtonPressed);
+        creationButton.GetComponent<Button>().onClick.AddListener(CreationButtonPressed);
         playButton.GetComponent<Button>().onClick.AddListener(PlayButtonPressed);
         returnButton.GetComponent<Button>().onClick.AddListener(TopMenuSetting);
 
@@ -85,12 +90,6 @@ public class CanvasController : MonoBehaviour
         {
             ArrangeCircularLayout(FormulaUIs);
         }
-
-        //// while menuCanvas is off, clear the scene
-        //if (!menuCanvas.activeSelf && !radialBar.activeSelf)
-        //{
-        //    ClearScene();
-        //}
 
 
         //int dropdownVal = dropdown.value;
@@ -199,6 +198,20 @@ public class CanvasController : MonoBehaviour
         zoomSliderObj.SetActive(true);
         returnButton.SetActive(true);
         SetStateIcon(Resources.Load<Sprite>("glass"));
+    }
+
+    // playlists button event
+    private void PlaylistsButtonPressed()
+    {
+        FormulaUI.SetActive(false);
+        playlistsObj.SetActive(true);
+        SetStateIcon(Resources.Load<Sprite>("CDAlbum4"));
+    }
+
+    // creation button event
+    private void CreationButtonPressed()
+    {
+
     }
 
     // play button event

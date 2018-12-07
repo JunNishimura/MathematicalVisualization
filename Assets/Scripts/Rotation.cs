@@ -14,11 +14,15 @@ public class Rotation : MonoBehaviour
 
     // menuUI
     [SerializeField] private GameObject ZoomSlider;
+    [SerializeField] private GameObject Playlists;
 
     private void Update()
     {
-        // can be rotated when menuUI isn't active
-        if (!ZoomSlider.activeSelf)
+        // In the case of 
+        // (1) zooming up or zooming out
+        // (2) scrolling the examples playlists
+        // the rotation cannot be happened.
+        if (!ZoomSlider.activeSelf && !Playlists.activeSelf)
         {
             if (Input.GetMouseButtonDown(0))
             {

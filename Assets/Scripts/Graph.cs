@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 // TODO:
 /*
- * deadline for the completion is the end of November
+ * deadline for the completion is the end of December
  * ( at least )
- * resolutionとzoomのためのradial barの実装。紐づけ。
- * FormulaUIのexampleの表示、インプット機能の実装
+ * 数式の表示
+ * 関数をパッチでつなげる
  * ( want )
  * add examples
- * compute shader and increase the resolution
- * increase the variety of prefabs
+ * add prefabs
+ * increase the resolution by compute shader
  * animation corresponding to the formula 
  * performance update
  * パッチ型で関数作れる。んで、作ったやつに自由に名前つけたりしてオリジナル関数を保存できたりする
- * update UI 
- * sound reaction 
+ * 手書きの数式を認識して関数作れる
+ * 音作れるようにしたい
  */
 
 public class Graph : MonoBehaviour 
@@ -45,7 +45,7 @@ public class Graph : MonoBehaviour
 
             float step = 2.0f / resolution;
             //GraphFunction f = CollectionOfFunctions.functions[(int)dropdown.value];
-            GraphFunction f = CollectionOfFunctions.functions[0];
+            GraphFunction f = CollectionOfFunctions.functions[PlaylistController.currentFuncID];
             for (int i = 0, z = 0; z < resolution; z++)
             {
                 float v = (z + 0.5f) * step - 1.0f;
