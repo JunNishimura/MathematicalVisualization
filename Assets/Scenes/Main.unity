@@ -280,7 +280,7 @@ RectTransform:
   m_Children:
   - {fileID: 1049078224}
   m_Father: {fileID: 826534472}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -721,7 +721,7 @@ RectTransform:
   - {fileID: 1619803338}
   - {fileID: 648028439}
   m_Father: {fileID: 826534472}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2432,8 +2432,8 @@ RectTransform:
   - {fileID: 1088358612}
   - {fileID: 878141837}
   - {fileID: 851941175}
-  - {fileID: 72178936}
   - {fileID: 346297117}
+  - {fileID: 72178936}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4431,6 +4431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: {x: 0.1, y: 0.2}
   ZoomSlider: {fileID: 851941174}
+  Playlists: {fileID: 346297116}
 --- !u!1 &1897854128
 GameObject:
   m_ObjectHideFlags: 0
